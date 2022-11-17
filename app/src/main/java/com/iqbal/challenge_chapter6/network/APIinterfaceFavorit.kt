@@ -6,6 +6,7 @@ import retrofit2.http.GET
 
 interface APIinterfaceFavorit {
 
-    @GET("favorit")
-    fun getallFilmFavorite() : Call<List<GetFavoriteUserItem>>
+
+
+
 }

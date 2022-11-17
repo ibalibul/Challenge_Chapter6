@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -16,6 +18,23 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    flavorDimensions("movie")
+    productFlavors{
+        userfree{
+            applicationIdSuffix ".userfree"
+            dimension "movie"
+        }
+        userpaid{
+            applicationIdSuffix ".userpaid"
+            dimension "movie"
+        }
+        admin{
+            applicationIdSuffix ".admin"
+            dimension "movie"
+        }
     }
 
     buildTypes {
@@ -46,6 +65,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.2'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -68,4 +89,10 @@ dependencies {
 
     //livedata
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+
+    implementation platform('com.google.firebase:firebase-bom:31.0.3')
+
+    testImplementation "io.mockk:mockk:1.13.1"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+
 }

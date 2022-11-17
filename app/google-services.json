@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "339766176801",
+    "project_id": "challengchp7",
+    "storage_bucket": "challengchp7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339766176801:android:7f13df29b53d6e99e04760",
+        "android_client_info": {
+          "package_name": "com.iqbal.challenge_chapter6.userpaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339766176801-04vfcmnsat9po067tq3u0bcvujgjqovi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqbal.challenge_chapter6.userpaid",
+            "certificate_hash": "5b48935680d8fde137d1efdf502b86706e74746d"
+          }
+        },
+        {
+          "client_id": "339766176801-b5qjh4hn5tu9g2hpgmg4ana0kplkjciu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAJiHdsaFQKvXjHh0rTMqfcZJ6fv1xbnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339766176801-b5qjh4hn5tu9g2hpgmg4ana0kplkjciu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

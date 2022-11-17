@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_marun"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:id="@+id/Register"
+        android:text="Register"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="32dp"
+        android:textColor="@color/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_Username_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="Username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/ed_Email_Register"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:layout_below="@+id/ed_Username_Register"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_Register_Password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:layout_below="@+id/ed_Email_Register"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_Register_PasswordRepeat"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:layout_below="@+id/ed_Register_Password"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ed_Register_PasswordRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

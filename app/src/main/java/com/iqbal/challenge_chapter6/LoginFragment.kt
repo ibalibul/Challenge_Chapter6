@@ -56,6 +56,9 @@ class LoginFragment : Fragment() {
 
 
         binding.btnLogin.setOnClickListener{
+
+//            throw RuntimeException("Test Crash") // Force a crash
+
             GlobalScope.launch {
                 userPrefrences.saveData(binding.edUsername.text.toString(), binding.edPassword.text.toString())
             }

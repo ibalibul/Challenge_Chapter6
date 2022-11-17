@@ -52,6 +52,10 @@ class HomeFragment : Fragment() {
 
         ShowFilm()
 
+        binding.imgFavorite.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_favoriteFragment)
+        }
+
         binding.imgProfile.setOnClickListener{
             findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
         }
